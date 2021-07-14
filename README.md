@@ -9,9 +9,14 @@ Landing Page for a car selling and leasing company created with React Js and SCS
 3. Run ```npm start ```
 
 #### Features
+
+### Hero Section
 ![Alt Text](https://github.com/DTGlov/Voituree/blob/main/readme%20img/hero.png)
+### First Section
 ![Alt Text](https://github.com/DTGlov/Voituree/blob/main/readme%20img/first.png)
+### Second Section
 ![Alt Text](https://github.com/DTGlov/Voituree/blob/main/readme%20img/second.png)
+### Top Cars and Footer
 ![Alt Text](https://github.com/DTGlov/Voituree/blob/main/readme%20img/fourth.png)
 
 
