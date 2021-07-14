@@ -47,16 +47,14 @@
 }
 
 @include media-lg{
-    .footer{
-    //    font-size: 9rem;
+
     
     .footer-container{
         grid-template-columns: 2fr 1fr  1fr 1fr;
-        // margin: 3em 0;
         height: 20vh;
         align-content: center;
     }
    
 }
 
-}
+

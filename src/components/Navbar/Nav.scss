@@ -16,7 +16,6 @@
 }
 .nav{
     width: 100%;
-    // margin: 0 auto;
     color: #fff;
     @include flexDirection(row);
     justify-content: space-between;
@@ -51,8 +50,6 @@
         transition: all 1s ease;
     }
 
-
-//Media Queries
 
 @include media-md{
     .header{

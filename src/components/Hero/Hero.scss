@@ -6,17 +6,8 @@ height: calc(100vh - 80px);
 justify-content: center;
 padding: 1.2em;
 
-
-// &-container{
-// @include ContainerCenter;
-// @include flexDirection(row);
-// justify-content: center;
-// }
-
 }
 .hero-text{
-    // width: 50%;
-    // color: #fff;
 
     &-first,
     &-second{
@@ -27,14 +18,12 @@ padding: 1.2em;
         margin-top: 1.2em;
         text-align: center;
         line-height: 1.4em;
-        // width: 80%;
     }
     &-button-bg{
         display: none;
 
     }
     &-button-sm{
-        // width: 100%;
         margin-top: 1.5em;
         @include flexDirection(row);
         justify-content: center;
@@ -64,7 +53,6 @@ padding: 1.2em;
     }
          &-image{
              width: 100%;
-            //  display: none;
          &-wagon{
              width: 100%;
 }
@@ -102,7 +90,6 @@ padding: 1.2em;
     }
     &-text-button{
         width: 100%;
-        //  @include flexDirection(row);
         display: flex;
     
     }
@@ -128,17 +115,11 @@ margin: 0em;
 }
 
 }
-// .hero-text-button{
-//     // @include flexDirection(row);
-//     justify-content: left;
-//     // margin-left: 2em;
-
-// }
  .hero-text-button-bg{
         display: block;
         margin-top: 1.5em;
         @include flexDirection(row);
-        // justify-content: center;
+        
 
              &-first{
        background: #fff;

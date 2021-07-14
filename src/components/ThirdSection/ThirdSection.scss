@@ -1,29 +1,23 @@
 @import '../../styles/variables','../../styles/config';
 
 .third-section{
-    // padding:2em;
     padding: 1.2em;
     margin-top:2em;
 }
 
 .third-section-container{
     @include ContainerCenter;
-    // @include flexDirection(row);
-    // justify-content: center;
     @include flexDirection(column);
 
 
     &-image{
-        // width: 50%;
         width: 100%;
         @include flexDirection(row);
         justify-content: center;
 
     }
     &-text{
-        // width: 50%;
         width: 100%;
-        // color: #fff;
     }
     &-heading{
         font-size: 2rem;

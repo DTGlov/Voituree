@@ -8,8 +8,6 @@
 }
 
 .topcars-container{
-    // width: 100%;
-    // margin: 0 auto;
     @include flexDirection(column);
    
 
@@ -21,18 +19,12 @@
 }
  .topcars-card{
        @include flexDirection(row);
-    //    justify-content: center;
       width: 100%;
-    // max-width: 480px;
        flex-wrap: nowrap;
        margin-top: 2em;
        overflow-x: scroll;
 
     &-item{
-    // width: 100%;
-    // width: 12.5em;
-//   margin-top: 2em;
-//   margin-left: 2em;
   padding: 1.5em;
   box-shadow: 0 1.3px 17px -2px rgba(0, 0, 0, 0.4);
 }

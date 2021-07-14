@@ -1,7 +1,6 @@
 @import '../../styles/variables','../../styles/config';
 
-.section{
-    // padding: 2em;
+.section{ 
     margin-top: 2em;
 }
 
@@ -39,7 +38,6 @@
         cursor: pointer;
         @include flexDirection(row)
         
-        // width: 100%;
     }
     &-button p{
         margin-right: 0.5em;
