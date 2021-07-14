@@ -11,7 +11,6 @@
 
   &.active{
      background: #212121;
-     opacity: 0.8;
   }
 }
 .nav{
@@ -50,6 +49,10 @@
         transition: all 1s ease;
     }
 
+.menu li {
+margin-bottom: 0.5em;
+opacity: 1;
+}
 
 @include media-md{
     .header{
