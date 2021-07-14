@@ -1,0 +1,50 @@
+@mixin flexDirection($direction) {
+    display: flex;
+    align-items: center;
+    flex-direction: $direction; 
+}
+
+@mixin ContainerCenter{
+    width: 90%;
+    margin: 0 auto;
+}
+
+@mixin iconColor{
+    color: $secondary-color;
+}
+
+@mixin media-sm {
+    @media screen and (min-width:640px) {
+        @content;
+    }
+}
+
+@mixin  media-md {
+    @media only screen and (min-width:768px) {
+        @content;
+    }
+}
+@mixin  media-lg {
+    @media only screen and (min-width:1024px) {
+        @content;
+    }
+}
+
+// @mixin media-lg{
+//  @media(min-width:769px) and (max-width:1024px){
+//  @content;
+//  }
+//  }
+
+// @mixin media-lg{
+//     @media only screen and (min-width: 769px), only screen and (max-width: 1024px) {
+//         @content;
+// }
+// }
+
+
+@mixin  media-xl {
+    @media screen and (min-width:1600px) {
+        @content;
+    }
+}

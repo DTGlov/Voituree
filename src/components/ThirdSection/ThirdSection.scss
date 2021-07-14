@@ -1,0 +1,86 @@
+@import '../../styles/variables','../../styles/config';
+
+.third-section{
+    // padding:2em;
+    padding: 1.2em;
+    margin-top:2em;
+}
+
+.third-section-container{
+    @include ContainerCenter;
+    // @include flexDirection(row);
+    // justify-content: center;
+    @include flexDirection(column);
+
+
+    &-image{
+        // width: 50%;
+        width: 100%;
+        @include flexDirection(row);
+        justify-content: center;
+
+    }
+    &-text{
+        // width: 50%;
+        width: 100%;
+        // color: #fff;
+    }
+    &-heading{
+        font-size: 2rem;
+        text-align: center;
+    }
+    &-para{
+        font-size: 1rem;
+        margin-top: 1.2em;
+        text-align: center;
+    }
+}
+
+
+
+.image{
+    width: 90%;
+}
+
+@include media-md{
+    .third-section-container{
+    @include flexDirection(row);
+    width: 100%;
+    justify-content: center;
+
+    &-heading,
+    &-para{
+        text-align: start;
+    }
+    }
+}
+
+@include media-lg{
+    .third-section-container{
+        @include flexDirection(row);
+        width: 100%;
+
+        &-image{
+            width: 40%;
+        }
+        &-text{
+            width: 50%;
+
+        }
+        
+        &-heading
+        {
+                width: 90%;
+                margin: 0 auto;
+            }
+            &-para{
+                 width: 90%;
+                margin: 0 auto;
+                margin-top: 1em;
+            }
+       
+    }
+    .image{
+        width: 100%;
+    }
+}

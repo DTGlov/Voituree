@@ -1,0 +1,66 @@
+@import '../../styles/variables','../../styles/config';
+
+.second-section{
+    padding: 0.5em;
+    width: 100%;
+    
+}
+
+.second-section-container{
+    @include ContainerCenter;
+    width: 100%;
+ 
+
+
+    &-heading{
+        text-align: center;
+        font-size: 1.2rem;
+         margin-top: 3em;
+        // color: #fff;
+    }
+}
+
+.card-section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    // padding: em;
+    margin-top: 2em;
+}
+.card-container{
+    @include flexDirection(column);
+      text-align: center;
+      
+       
+
+    &-icon{
+    @include iconColor;
+    padding: 1.5em;
+    border: 1px solid $secondary-color;
+
+
+}
+    &-text{
+        // color: #fff;
+
+        &-heading{
+            font-size: 1rem;
+            margin-top: 0.5em;
+        }
+        &-para{
+            font-size: 1rem;
+            display: none;
+        }
+
+}
+}
+
+@include media-md{
+    .second-section{
+        padding: 0 2em;
+    }
+    .card-container-text-para{
+        display: block;
+        // width: 80%;
+        text-align: center;
+    }
+}

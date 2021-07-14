@@ -1,0 +1,62 @@
+@import '../../styles/variables','../../styles/config';
+
+.footer{
+    background: rgba(0,0,0,0.5);
+    margin-top: 3em;
+    padding: 1em;
+
+    &-container{
+    @include ContainerCenter;
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+}
+    &-company-text{
+        width: 80%;
+
+        &-head{
+            font-size: 1rem;
+            color: $secondary-color;
+        }
+        &-para{
+            font-size: 0.8rem;
+            margin-top: 0.5em;
+        }
+        &-items{
+            font-size: 0.8rem;
+            margin-top: 1em;
+        }
+        &-items p {
+            margin-top: 0.2em;
+            cursor: pointer;
+            transition: all 1s ease;
+        }
+        &-items p:hover {
+           color: $secondary-color;
+           text-decoration: underline;
+        }
+
+}
+&-copyright{
+   @include ContainerCenter;
+   font-size: 0.8rem;
+   margin-top: 1.5em;
+}
+&-copyright span{
+  color: $secondary-color;
+}
+}
+
+@include media-lg{
+    .footer{
+    //    font-size: 9rem;
+    
+    .footer-container{
+        grid-template-columns: 2fr 1fr  1fr 1fr;
+        // margin: 3em 0;
+        height: 20vh;
+        align-content: center;
+    }
+   
+}
+
+}

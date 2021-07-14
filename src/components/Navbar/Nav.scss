@@ -1,0 +1,73 @@
+@import '../../styles/variables','../../styles/config';
+
+.header{
+   height: 80px;
+   padding: 2em 1em;
+  @include flexDirection(row);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  
+
+  &.active{
+     background: #212121;
+     opacity: 0.8;
+  }
+}
+.nav{
+    width: 100%;
+    // margin: 0 auto;
+    color: #fff;
+    @include flexDirection(row);
+    justify-content: space-between;
+    & ul{
+        list-style: none;
+        @include flexDirection(row);
+        display: none;
+
+    }
+    & li{
+        margin-left:2em;
+      
+    }
+ 
+    & a{
+        text-decoration: none;
+        color: #fff;
+        transition:all 1s ease;
+    }
+       & a:hover{
+        color: $secondary-color;
+    }
+
+   
+   
+}
+.logo{
+    color:$secondary-color;
+}
+.current-page{
+        border-bottom: 1px solid whitesmoke;
+        transition: all 1s ease;
+    }
+
+
+//Media Queries
+
+@include media-md{
+    .header{
+        padding: 2em 2em;
+    }
+    .nav ul{
+        display: flex;
+    }
+    .hamburger{
+        display: none;
+    }
+}
+
+@include media-lg{
+    .header{
+        padding: 2em 4em;
+    }
+}

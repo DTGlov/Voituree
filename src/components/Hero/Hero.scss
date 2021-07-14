@@ -1,0 +1,172 @@
+@import '../../styles/config','../../styles/variables';
+
+.hero-section{
+height: calc(100vh - 80px);
+@include flexDirection(column);
+justify-content: center;
+padding: 1.2em;
+
+
+// &-container{
+// @include ContainerCenter;
+// @include flexDirection(row);
+// justify-content: center;
+// }
+
+}
+.hero-text{
+    // width: 50%;
+    // color: #fff;
+
+    &-first,
+    &-second{
+        font-size: 2rem;
+        text-align: center;
+    }
+    &-paragraph{
+        margin-top: 1.2em;
+        text-align: center;
+        line-height: 1.4em;
+        // width: 80%;
+    }
+    &-button-bg{
+        display: none;
+
+    }
+    &-button-sm{
+        // width: 100%;
+        margin-top: 1.5em;
+        @include flexDirection(row);
+        justify-content: center;
+
+        &-first{
+       background: #fff;
+       color: #000;
+       padding:1em 1em;
+       border-radius: 0.2em;
+       cursor: pointer;
+       margin-right: 1em;
+       background: $secondary-color;
+        }
+        &-second{
+            background: $primary-color;
+            border: 2px solid #fff;
+            padding:.9em 1em;
+            border-radius: 0.2em;
+            cursor: pointer;
+            transition: all 1s ease-in;
+        }
+        &-second:hover{
+            color: $primary-color;
+            background: $secondary-color;
+            border: 1px $primary-color;
+        }
+    }
+         &-image{
+             width: 100%;
+            //  display: none;
+         &-wagon{
+             width: 100%;
+}
+}
+}
+
+
+@include media-md{
+    .hero-section{
+        height: 100%;
+        margin: 4em 0;
+    }
+    .hero-section-container{
+   @include ContainerCenter;
+    @include flexDirection(row);
+   justify-content: center;
+   padding: 0 1em;
+   width: 100%;
+   
+   
+.hero-text{
+    width: 50%;
+
+    &-first,
+    &-second{
+        font-size: 3rem;
+        text-align: start;
+    }
+
+     &-paragraph{
+        margin-top: 1.2em;
+        text-align: start;
+        line-height: 1.4em;
+        width: 90%;
+    }
+    &-text-button{
+        width: 100%;
+        //  @include flexDirection(row);
+        display: flex;
+    
+    }
+    &-image{
+        width: 50%;
+    }
+}
+    }
+}
+
+@include media-lg{
+.hero-section{
+height: calc(100vh - 80px);
+@include flexDirection(column);
+justify-content: center;
+padding: 0 3.5em;
+margin: 0em;
+
+
+&-container{
+    margin: 0;
+    @include flexDirection(row);
+}
+
+}
+// .hero-text-button{
+//     // @include flexDirection(row);
+//     justify-content: left;
+//     // margin-left: 2em;
+
+// }
+ .hero-text-button-bg{
+        display: block;
+        margin-top: 1.5em;
+        @include flexDirection(row);
+        // justify-content: center;
+
+             &-first{
+       background: #fff;
+       color: #000;
+       padding:1em 1em;
+       border-radius: 0.2em;
+       cursor: pointer;
+       margin-right: 1em;
+       background: $secondary-color;
+        }
+ &-second{
+            background: $primary-color;
+            border: 2px solid #fff;
+            padding:.9em 1em;
+            border-radius: 0.2em;
+            cursor: pointer;
+            transition: all 1s ease-in;
+        }
+        &-second:hover{
+            color: $primary-color;
+            background: $secondary-color;
+            border: 1px $primary-color;
+        }
+        
+
+    }
+    .hero-text-button-sm{
+        display: none;
+    }
+
+}

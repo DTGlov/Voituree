@@ -1,0 +1,47 @@
+@import '../../styles/variables','../../styles/config';
+
+.section{
+    // padding: 2em;
+    margin-top: 2em;
+}
+
+.section-container{
+    @include ContainerCenter;
+    @include flexDirection(row);
+    justify-content: center;
+}
+.form-section{
+    @include flexDirection(row);
+    background: #fff;
+    padding: 1em 1em;
+    border-radius: 0.3em;
+    color: #000;
+
+    &-date{
+        @include flexDirection(row);
+        margin-right: 1em;
+         cursor: pointer;
+    }
+    &-date p {
+        font-size: .8rem;
+    }
+    &-item{
+    @include iconColor;
+       margin-right: 0.5em; 
+       
+      
+    }
+    &-button{
+        background: $secondary-color;
+        color: #000;
+        padding:  1em 1em;
+        border-radius: 0.3em;
+        cursor: pointer;
+        @include flexDirection(row)
+        
+        // width: 100%;
+    }
+    &-button p{
+        margin-right: 0.5em;
+    }
+}

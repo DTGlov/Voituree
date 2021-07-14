@@ -1,0 +1,105 @@
+@import '../../styles/config','../../styles/variables';
+
+
+.topcars-section{
+    @include ContainerCenter;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+.topcars-container{
+    // width: 100%;
+    // margin: 0 auto;
+    @include flexDirection(column);
+   
+
+    &-heading{
+        text-align: center;
+        font-size: 2rem;
+    }
+   
+}
+ .topcars-card{
+       @include flexDirection(row);
+    //    justify-content: center;
+      width: 100%;
+    // max-width: 480px;
+       flex-wrap: nowrap;
+       margin-top: 2em;
+       overflow-x: scroll;
+
+    &-item{
+    // width: 100%;
+    // width: 12.5em;
+//   margin-top: 2em;
+//   margin-left: 2em;
+  padding: 1.5em;
+  box-shadow: 0 1.3px 17px -2px rgba(0, 0, 0, 0.4);
+}
+      
+    }
+
+    .car-rate{
+        font-size: 0.9em;
+    }
+.car-image{
+        width: 100%;
+    }
+
+.car-heading{
+font-size: 1rem;
+margin-top: 1em;
+text-align: center;
+    }
+    .car-info{
+        margin-top: 1em;
+    }
+
+    .car-border{
+        margin-top: 0.5em;
+        border: 1px solid #C1C1C1;
+    }
+
+    .rate-color{
+        color: $secondary-color;
+    }
+.car-details{
+        @include flexDirection(row);
+        margin-top: .5em;
+        font-size: 0.9em;
+        justify-content: space-between;
+        &-item{
+            @include flexDirection(row);
+        }
+    }
+
+    .topcar-button{
+        margin-top: 1em;
+        text-align: center;
+        background: $secondary-color;
+        padding: .9em;
+        color: #000;
+        cursor: pointer;
+    }
+
+    @include media-md{
+        .topcars-card{
+              flex-wrap: wrap;
+              width: 100;
+              overflow-x: hidden;
+
+              &-item{
+              width: 45%;
+              margin: 1em;
+
+             
+              }
+        }
+    }
+
+    @include media-lg{
+        .topcars-card{
+            width: 100%;
+            flex-wrap: nowrap;
+        }
+    }
